@@ -1,0 +1,77 @@
+ body {
+      margin-bottom: 110px;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #3bb33b;
+background: linear-gradient(0deg, rgba(59, 179, 59, 1) 65%, rgba(0, 191, 255, 1) 75%);
+      color: #fff;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    #container {
+      position: relative;
+      width: 300px;
+      height: 600px;
+      margin: 0 auto;
+    }
+
+
+    /* Espada como imagem separada */
+    #sword {
+      width: 100px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 120px; /* Parte da lâmina começa dentro da pedra */
+      transition: bottom 0.1s;
+      z-index: 1;
+    }
+
+    /* Pedra como imagem */
+    #rock {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+    }
+
+
+    #counter {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    #progress {
+      width: 38%;
+      height: 20px;
+      margin: 15px auto;
+      background-color: #555;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    #bar {
+      height: 100%;
+      width: 0%;
+      background-color: rgb(234, 238, 17);
+      transition: width 0.1s;
+    }
+
+    #reset {
+      margin-top: 15px;
+      padding: 8px 16px;
+      background-color: #ff0000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #reset:hover {
+      background-color: #b30000;
+    }
